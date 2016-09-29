@@ -25,7 +25,7 @@ $ npm run ffmpeg
   *  **JsMpg** *(MPEG1 Video Decoder in JavaScript)* https://libraries.io/bower/jsmpg 
 
 ###**Requirements**
-  * **NodeJs**
+  * **NodeJs** https://nodejs.org/
   * **ffmpeg** https://www.ffmpeg.org/
 
 
