@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "express-server": "node index.js",
     "streaming-server": "node stream.js 12345",
-    "ffmpeg": "ffmpeg -s 640x480 -r 24 -f vfwcap -i /dev/video0 -f mpeg1video -b 400k -r 24 http://localhost:8082/12345/640/480"
+    "ffmpeg": "ffmpeg -f vfwcap -video_size 640x480 -framerate 24 -i video='BisonCam, NB Pro':audio='Line In (2- High Definition Audio Device)'' abc.mp4 -movflags faststart -framerate 15 -vcodec mpeg1video -preset veryfast -maxrate 3000k -bufsize 4000k -c:a aac -b:a 160k -ar 44100 -b:a 128k -f mpeg1video http://localhost:8082/12345/640/480"
   },
   "repository": {
     "type": "git",
