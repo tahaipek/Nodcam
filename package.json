@@ -1,0 +1,32 @@
+{
+  "name": "nodcam",
+  "version": "1.0.0",
+  "description": "Access and stream web camera in nodejs using ffmpeg, websockets and HTML5.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "express-server": "node index.js",
+    "streaming-server": "node stream.js 12345",
+    "ffmpeg": "ffmpeg -s 640x480 -r 24 -f vfwcap -i /dev/video0 -f mpeg1video -b 400k -r 24 http://localhost:8082/12345/640/480"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tahaipek/Nodcam.git"
+  },
+  "keywords": [
+    "nodejs",
+    "webcam",
+    "camera",
+    "streaming"
+  ],
+  "author": "Taha İPEK",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tahaipek/Nodcam/issues"
+  },
+  "homepage": "https://github.com/tahaipek/Nodcam#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "ws": "^1.1.1"
+  }
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=640, initial-scale=1"/>
+	<title>Streaming</title>
+	<style type="text/css">
+		body {
+			background: black;
+			text-align: center;
+			margin-top: 10%;
+		}
+		#videoCanvas {
+			background: red;
+			width: 640px;
+			height: 480px;
+		}
+	</style>
+</head>
+<body>
+	<canvas id="videoCanvas" width="640" height="480">
+	</canvas>
+	<script src="public/jsmpg.js"></script>
+	<script type="text/javascript">
+	var canvas = document.getElementById('videoCanvas');
+	var ctx = canvas.getContext('2d');
+	ctx.fillStyle = '#fff';
+	ctx.fillText('Loading...', canvas.width/2-30, canvas.height/3);
+	
+
+	var client = new WebSocket( 'ws://127.0.0.1:8084/12345' );
+	var player = new jsmpeg(client, {canvas:canvas});
+	</script>
+</body>
+</html>
