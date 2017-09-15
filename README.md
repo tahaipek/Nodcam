@@ -6,6 +6,8 @@ Access and stream web camera in **nodejs** using **ffmpeg**, **websockets** and 
 ```npm
 $ git clone https://github.com/tahaipek/Nodcam.git
 
+$ cd Nodcam
+
 $ npm install
 
 $ npm run express-server
