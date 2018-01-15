@@ -1,7 +1,7 @@
 # Nodcam
 Access and stream web camera in **nodejs** using **ffmpeg**, **websockets** and **HTML5**.
 
-###**Usage:**
+### **Usage:**
 
 ```npm
 $ git clone https://github.com/tahaipek/Nodcam.git
@@ -23,12 +23,12 @@ if you don't want to record, remove 'output' keyword.
 ```
 
 
-###**Third Party Libraries:**
+### **Third Party Libraries:**
   * **ExpressJs** http://expressjs.com/
   * **Ws** https://www.npmjs.com/package/ws
   *  **JsMpg** *(MPEG1 Video Decoder in JavaScript)* https://libraries.io/bower/jsmpg 
 
-###**Requirements**
+### **Requirements**
   * **NodeJs** https://nodejs.org/
   * **ffmpeg** https://www.ffmpeg.org/
 
